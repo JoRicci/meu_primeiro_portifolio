@@ -177,7 +177,7 @@ html, body{
 }
 
 @media (max-width:1200px ) {
-    .contact-link{
+    .contact-links-section{
         flex-direction: column;
     }
     .navbar__link{
