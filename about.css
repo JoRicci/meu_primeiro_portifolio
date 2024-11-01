@@ -15,7 +15,7 @@ html, body{
     height: 100%;
 }
 
-.cabecalho{
+.header{
     background-image: linear-gradient(to top, #ffc300, #d3d3d3);
     display: flex;
     padding: 2%;
@@ -31,14 +31,15 @@ html, body{
     font-size: 15px;
     font-family:"Orbitron", serif ;
     color: #1C1C1C;
+    transition: .2s ease-in-out;
 }
 
 .navbar__link:hover{
-    font-size: 18px;
+    transform: scale(1.2);
 
 }
 
-.apresentacao{
+.main{
     display: flex;
     align-items: center;
     text-align: center;
@@ -46,7 +47,7 @@ html, body{
     gap: 5%;
     padding: 8% 5%;}
 
-.apresentacao__conteudo {
+.main__content{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -54,17 +55,17 @@ html, body{
     width: 50%;
 }
 
-.apresentacao__conteudo__titulo{
+.main__content__title{
     font-size: 50px;
     font-family: "Orbitron", serif;
 }
 
-.apresentacao__conteudo__paragrafo{
+.main__content__text{
     font-size: 20px;
     font-family:"Montserrat",sans-serif ;
 }
 
-.imagens{
+.image-circle{
     border-radius: 80%;
 }
 
@@ -79,25 +80,25 @@ footer{
 }
 
 @media (max-width:1200px) {
-    .apresentacao{
+    .main{
         flex-direction: column;
         margin: auto;
         gap: 30px;
         
     }
-    .apresentacao__conteudo{
+    .main__content{
         margin: auto;
         width: 100%;
         font-size: 10rem;
     }
 
-    .apresentacao__conteudo__titulo{
+    .main__content__title{
         font-size: 2rem;
     }
-    .apresentacao__conteudo__paragrafo{
+    .main__content__text{
         font-size: 1rem;
     }
-    .imagens{
+    .image-circle{
         width: 75%;
     }
 
@@ -107,7 +108,7 @@ footer{
         justify-content: center;
     }
 
-    .cabecalho{
+    .header{
         display: flex;
         align-items: center;
         text-align: center;
