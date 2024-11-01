@@ -80,7 +80,6 @@ html, body{
 
 .contact-links-section{
     display: flex;
-    flex-direction: row;
     gap: 25px;
     font-family:"Orbitron", serif  ;
     padding: 10px;
@@ -178,8 +177,10 @@ html, body{
 
 @media (max-width:1200px ) {
     .contact-links-section{
+        display: flex;
         flex-direction: column;
     }
+
     .navbar__link{
         display: flex;
         align-items: center;
